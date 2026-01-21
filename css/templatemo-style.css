@@ -451,4 +451,49 @@ footer .copyright a {
 .portfolio-thumb .portfolio-overlay {
 	padding-top: 60px;
 }
+/* ===== MOBILE FIX ===== */
+@media (max-width: 767px) {
+
+  /* Tipografía más humana */
+  h1 { font-size: 32px; }
+  h2 { font-size: 26px; }
+  h3 { font-size: 20px; }
+  p  { line-height: 22px; letter-spacing: 0.3px; }
+
+  /* Quita el “mega padding” en secciones */
+  #intro {
+    padding-top: 80px;
+    padding-bottom: 60px;
+  }
+
+  #work .title {
+    padding: 60px 15px 30px 15px;
+  }
+
+  #portfolio,
+  #price {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  #team,
+  #contact,
+  footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  /* Botón del home: menos tractor */
+  #home .btn {
+    padding: 14px 22px;
+    margin-top: 24px;
+  }
+
+  /* Parallax off en móvil (menos bugs) */
+  .parallax-section {
+    background-attachment: scroll !important;
+  }
 }
+
+}
+
